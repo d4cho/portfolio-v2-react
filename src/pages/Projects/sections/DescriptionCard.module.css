@@ -1,0 +1,14 @@
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70rem;
+  height: 35rem;
+  background-color: #181818;
+  color: #a5a5a5;
+}
+
+.descriptionContainer > div {
+  padding: 1rem 1rem;
+}

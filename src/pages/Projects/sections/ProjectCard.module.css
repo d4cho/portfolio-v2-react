@@ -1,0 +1,12 @@
+.flippingPic {
+  background-size: cover;
+  position: absolute;
+  width: 70rem;
+  cursor: pointer;
+  will-change: transform, opacity;
+}
+
+.img {
+  width: 100%;
+  object-fit: contain;
+}

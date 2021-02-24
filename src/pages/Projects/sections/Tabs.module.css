@@ -1,0 +1,30 @@
+.tabsContainer {
+  display: flex;
+  border-bottom: 1px solid #08fdd8;
+  margin-top: 1rem;
+}
+
+.tabsContainer > div {
+  color: #08fdd8;
+  border-left: 1px solid #08fdd8;
+  border-top: 1px solid #08fdd8;
+  border-right: 1px solid #08fdd8;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px 25px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.5rem;
+}
+
+.tabsContainer > div:hover {
+  color: black;
+  background-color: #08fdd8;
+}
+
+.projectCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}

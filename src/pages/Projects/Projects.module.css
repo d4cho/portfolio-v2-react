@@ -1,0 +1,38 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #262626;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+  margin-top: 1rem;
+}
+
+.title {
+  display: flex;
+  color: #08fdd8;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 760px) {
+  .content {
+    margin-left: 3rem;
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    margin-left: 1rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+}
