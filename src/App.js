@@ -1,6 +1,7 @@
 import styles from './App.module.css';
 import Sidebar from './components/sidebar/Sidebar';
 import Home from './pages/Home/Home';
+import About from './pages/About/About';
 
 function App() {
   return (
@@ -8,9 +9,7 @@ function App() {
       <Sidebar />
       <div className={styles.container}>
         <Home />
-        <section style={test} id='about'>
-          about
-        </section>
+        <About />
         <section style={test} id='projects'>
           projects
         </section>

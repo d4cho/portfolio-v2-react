@@ -1,0 +1,62 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #262626;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rem;
+  margin-top: 5rem;
+}
+
+.title {
+  display: flex;
+  color: #08fdd8;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.textContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  width: 50vw;
+}
+
+.textContainer > p {
+  margin: 2rem 1rem;
+}
+
+@media screen and (max-width: 760px) {
+  .content {
+    margin-left: 3rem;
+    margin-top: 10rem;
+  }
+
+  .textContainer {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    margin-left: 1rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .textContainer {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+}

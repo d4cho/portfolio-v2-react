@@ -439,9 +439,6 @@
   }
 }
 
-.Text-animated {
-}
-
 .Text-animated:hover {
   animation-name: animation; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
