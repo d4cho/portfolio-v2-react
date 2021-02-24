@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import { BsChevronDoubleDown } from 'react-icons/bs';
 
+import Button from '../../components/button/Button';
 import styles from './Home.module.css';
 
 const Home = () => {
@@ -43,18 +44,10 @@ const Home = () => {
             <span className='Text-animated'>.</span>
           </span>
         </div>
-        <br />
-        <div className='Title'>React Developer / Full Stack</div>
-        <br />
-        <br />
-        <Link
-          style={{ textDecoration: 'none' }}
-          to='contact'
-          smooth={true}
-          duration={1000}>
-          <div className='Contact'>Contact me!</div>
-        </Link>
+        <div className={styles.title}>React Developer / Full Stack</div>
+        <Button linkTo='contact' text='Contact me!' />
       </div>
+      <BsChevronDoubleDown className={'arrowAnimated'} />
     </section>
   );
 };

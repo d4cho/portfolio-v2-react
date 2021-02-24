@@ -5,6 +5,7 @@
   background-color: #181818;
   display: grid;
   grid-template-rows: auto 1fr;
+  z-index: 100;
 }
 
 .logo {
