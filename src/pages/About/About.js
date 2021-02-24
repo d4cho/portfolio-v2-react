@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 import styles from './About.module.css';
 
@@ -31,7 +32,15 @@ const About = () => {
             Interested in the entire spectrum from frontend to backend and
             working on ambitious projects with positive people.
           </p>
-          <div>Check out my github here</div>
+
+          <div className={styles.githubContainer}>
+            <a href='https://github.com/d4cho'>
+              <AiFillGithub />
+            </a>
+            <a href='https://www.linkedin.com/in/danielwc/'>
+              <AiFillLinkedin />
+            </a>
+          </div>
         </div>
       </div>
     </section>
