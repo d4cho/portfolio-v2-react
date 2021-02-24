@@ -7,17 +7,17 @@ const Tabs = (props) => {
   const [activeTab, setActiveTab] = useState(1);
 
   const tabClickedHandler = (event) => {
-    setActiveTab(event.currentTarget.id);
+    setActiveTab(+event.currentTarget.id);
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.tabsContainer}>
         <div
           onClick={tabClickedHandler}
           id={1}
           style={
-            activeTab == 1
+            activeTab === 1
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
@@ -27,7 +27,7 @@ const Tabs = (props) => {
           onClick={tabClickedHandler}
           id={2}
           style={
-            activeTab == 2
+            activeTab === 2
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
@@ -37,7 +37,7 @@ const Tabs = (props) => {
           onClick={tabClickedHandler}
           id={3}
           style={
-            activeTab == 3
+            activeTab === 3
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
@@ -47,7 +47,7 @@ const Tabs = (props) => {
           onClick={tabClickedHandler}
           id={4}
           style={
-            activeTab == 4
+            activeTab === 4
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
@@ -57,23 +57,21 @@ const Tabs = (props) => {
           onClick={tabClickedHandler}
           id={5}
           style={
-            activeTab == 5
+            activeTab === 5
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
           Apex Stats Tracker
         </div>
       </div>
-      <div className={styles.projectCardContainer}>
-        <ProjectCard
-          image={props.info[activeTab - 1].image}
-          title={props.info[activeTab - 1].title}
-          date={props.info[activeTab - 1].date}
-          description={props.info[activeTab - 1].description}
-          purpose={props.info[activeTab - 1].purpose}
-          link={props.info[activeTab - 1].link}
-        />
-      </div>
+      <ProjectCard
+        image={props.info[activeTab - 1].image}
+        title={props.info[activeTab - 1].title}
+        date={props.info[activeTab - 1].date}
+        description={props.info[activeTab - 1].description}
+        purpose={props.info[activeTab - 1].purpose}
+        link={props.info[activeTab - 1].link}
+      />
     </div>
   );
 };

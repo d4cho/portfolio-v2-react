@@ -3,12 +3,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70rem;
-  height: 35rem;
+  width: 80vw;
+  height: 38vw;
   background-color: #181818;
   color: #a5a5a5;
 }
 
-.descriptionContainer > div {
-  padding: 1rem 1rem;
+.descriptionContainer > h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.descriptionContainer > p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 760px) {
+  .descriptionContainer > h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .descriptionContainer > p {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
 }

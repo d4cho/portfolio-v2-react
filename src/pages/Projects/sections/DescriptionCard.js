@@ -4,17 +4,17 @@ import styles from './DescriptionCard.module.css';
 const DescriptionCard = (props) => {
   return (
     <div className={styles.descriptionContainer}>
-      <div style={{ fontSize: '2rem', color: '#08fdd8' }}>{props.title}</div>
-      <div>{props.date}</div>
-      <div>{props.description}</div>
-      <div>{props.purpose}</div>
-      <div>
+      <h1 style={{ color: '#08fdd8' }}>{props.title}</h1>
+      <p>{props.date}</p>
+      <p>{props.description}</p>
+      <p>{props.purpose}</p>
+      <p>
         Check out{' '}
         <a href={props.link} target='_blank' style={{ color: '#08fdd8' }}>
           this project
         </a>
         .
-      </div>
+      </p>
     </div>
   );
 };
