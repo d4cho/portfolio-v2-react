@@ -1,0 +1,29 @@
+.success {
+  background-color: #08fdd8;
+  color: black;
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 20px 20px 5px 20px;
+  font-size: 1.5rem;
+}
+
+.closeBtn {
+  position: fixed;
+  top: 6px;
+  right: 12px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+}
+
+@media screen and (max-width: 760px) {
+  .success {
+    background-color: #08fdd8;
+    color: black;
+    padding: 2rem 1.5rem 1.5rem;
+    border-radius: 20px 20px 5px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}

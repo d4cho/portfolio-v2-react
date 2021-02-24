@@ -62,15 +62,15 @@
   .textContainer > p {
     margin: 1rem 1rem;
   }
+
+  .title {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .content {
     margin-left: 1rem;
-  }
-
-  .title {
-    font-size: 3.5rem;
   }
 
   .textContainer {

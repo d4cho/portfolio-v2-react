@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTransition, animated } from 'react-spring';
+import styles from './Notification.module.css';
 
 const NOTIFICATION_MSG = {
   success: `Thanks for reaching out! I'll get back to you shortly.`,
@@ -37,9 +38,9 @@ const Notification = (props) => {
     ({ item, key, props }) =>
       item && (
         <animated.div key={key} style={props}>
-          <div className='Success-notification'>
+          <div className={styles.success}>
             {message}
-            <div className='Close-button-notifcation' onClick={toggle}>
+            <div className={styles.closeBtn} onClick={toggle}>
               &#10005;
             </div>
           </div>

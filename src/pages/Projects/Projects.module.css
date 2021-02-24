@@ -25,14 +25,14 @@
     margin-left: 3rem;
     margin-top: 10rem;
   }
+
+  .title {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .content {
     margin-left: 1rem;
-  }
-
-  .title {
-    font-size: 3.5rem;
   }
 }

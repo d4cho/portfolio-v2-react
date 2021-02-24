@@ -34,9 +34,9 @@ const Contact = () => {
           me using the form below.
         </p>
         <Form refreshFunction={handleNotification} />
-      </div>
-      <div className={styles.notificationContainer}>
-        <Notification status={notificationStatus} />
+        <div className={styles.notificationContainer}>
+          <Notification status={notificationStatus} />
+        </div>
       </div>
     </section>
   );

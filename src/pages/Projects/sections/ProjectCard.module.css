@@ -1,7 +1,7 @@
 .flippingPic {
   background-size: cover;
   position: absolute;
-  width: 80vw;
+  width: 70vw;
   cursor: pointer;
   will-change: transform, opacity;
 }
